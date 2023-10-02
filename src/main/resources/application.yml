@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    properties:
+      hibernate:
+        default_schema: song_schema
+        highlight_sql: true
+        format_sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/song_db?characterEncoding=utf8
+    username: song_owner
+    password: 123
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    schemas: song_schema
+server:
+  port: 8081

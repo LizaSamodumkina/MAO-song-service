@@ -1,0 +1,1 @@
+docker build -t local-song-db . && docker run --name local-song-postgres -e POSTGRES_PASSWORD=whywhywhy -p 5433:5432 -d local-song-db
