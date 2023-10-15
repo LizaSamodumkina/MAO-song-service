@@ -7,7 +7,7 @@ spring:
         highlight_sql: true
         format_sql: true
   datasource:
-    url: jdbc:postgresql://localhost:5433/song_db?characterEncoding=utf8
+    url: ${SPRING_DATASOURCE_URL}
     username: song_owner
     password: 123
     driver-class-name: org.postgresql.Driver

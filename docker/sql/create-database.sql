@@ -1,8 +1,8 @@
 create user "song_owner" nosuperuser nocreatedb nocreaterole encrypted password '123';
 
-create database song_db;
+create database song_db_a;
 
-alter database song_db owner to song_owner;
+alter database song_db_a owner to song_owner;
 
 \c song_db;
 
