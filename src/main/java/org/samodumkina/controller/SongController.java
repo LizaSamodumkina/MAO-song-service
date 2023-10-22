@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/songs", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/api/songs", produces = MediaType.APPLICATION_JSON_VALUE)
 public class SongController {
 
   private final SongService service;
